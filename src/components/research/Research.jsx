@@ -1,7 +1,7 @@
 import React from 'react'
 import { researchData } from '../../data/research'
 import { ResearchTimeline } from './ResearchTimeline'
-import { FlowSimulation } from './FlowSimulation'
+import { SpeechSimulation } from './SpeechSimulation'
 import { Reveal } from '../ui/Reveal'
 
 export function Research() {
@@ -41,7 +41,7 @@ export function Research() {
 
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
           <Reveal className="lg:col-span-8" delay={0.1}>
-            <FlowSimulation />
+            <SpeechSimulation />
             <div className="mt-6 flex flex-wrap gap-2">
               {researchData.keywords.map((kw) => (
                 <span
