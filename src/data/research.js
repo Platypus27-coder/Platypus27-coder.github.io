@@ -1,16 +1,16 @@
 // Định hướng nghiên cứu & kỹ thuật chuyên sâu của Ngô Gia Huy
 export const researchData = {
-  primaryTopic: 'High-Performance Inference & Neurosymbolic Agentic Systems',
+  primaryTopic: 'Intelligent LLM, RAG & Neurosymbolic Agentic Systems',
   summary:
-    'Nghiên cứu kết hợp suy luận mô hình ngôn ngữ lớn tốc độ cao (High-Performance LLM Serving & Quantization) với kiến trúc Agent lai biểu tượng (Neurosymbolic Reasoning - Z3 Prover, SymPy), giúp nâng cao độ chính xác bài toán STEM và tối ưu hóa hạ tầng tính toán cục bộ.',
+    'Nghiên cứu và phát triển các hệ thống mô hình ngôn ngữ lớn (LLM), kỹ thuật truy xuất tăng cường sinh (RAG đa ngôn ngữ & bảo mật) và kiến trúc Agent tự hành (AI Agents, Neurosymbolic Reasoning), giải quyết bài toán thực tế với độ chính xác và độ tin cậy cao.',
   keywords: [
-    'LLM Serving',
-    'Neurosymbolic AI',
-    'vLLM',
+    'Large Language Models (LLM)',
+    'RAG Systems',
+    'AI Agents',
     'LangGraph',
-    'Model Quantization',
-    'Speech Processing',
-    'Z3 Prover',
+    'Neurosymbolic AI',
+    'Speech AI',
+    'Vector DB & Retrieval',
   ],
   milestones: [
     {
@@ -34,9 +34,9 @@ export const researchData = {
         'Cơ chế phản hồi tự động phát hiện runtime exceptions và tái sinh mã solver hoàn chỉnh trên nền tảng LangGraph.',
     },
     {
-      title: 'High-Throughput LLM Serving',
+      title: 'LLM Acceleration & Inference',
       description:
-        'Tối ưu hóa throughput và TTFT/TPOT trên GPU NVIDIA H200 MiG với vLLM, quản trị bộ đệm KV-cache và quantization tiên tiến.',
+        'Tối ưu hóa hiệu năng suy luận và nén mô hình trên GPU phân vùng NVIDIA H200 MiG, quản trị bộ đệm KV-cache và kỹ thuật quantization tiên tiến.',
     },
     {
       title: 'Multi-Agent 3D Simulation & Control',

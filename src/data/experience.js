@@ -4,9 +4,9 @@ export const experiences = [
     year: '2026',
     category: 'AI Competitions',
     title: 'Viettel AI Race 2026',
-    role: 'High-Performance LLM Serving Engineer',
+    role: 'LLM Optimization & Inference',
     description:
-      'Nghiên cứu và tối ưu hóa hạ tầng suy luận LLM cho mô hình LiquidAI/LFM2.5-1.2B-Instruct trên GPU NVIDIA H200 MiG instance; tập trung giảm thiểu TTFT, TPOT, quản lý bộ nhớ đệm KV-cache, continuous batching và quantization.',
+      'Nghiên cứu và tối ưu hóa suy luận mô hình LiquidAI/LFM2.5-1.2B-Instruct trên GPU NVIDIA H200 MiG instance; tập trung giảm thiểu TTFT, TPOT, quản lý bộ nhớ đệm KV-cache, continuous batching và quantization.',
   },
   {
     year: '2026',
@@ -36,7 +36,7 @@ export const experiences = [
     year: '2024 – Hiện tại',
     category: 'Education & Honors',
     title: 'Đại học Khoa học Tự nhiên - ĐHQG TP.HCM (HCMUS)',
-    role: 'Cử nhân Khoa học Dữ liệu (Khóa 24KDL1) — GPA: 3.741 / 4.0',
+    role: 'Cử nhân Khoa học Dữ liệu (Khóa 24KDL) — GPA: 3.741 / 4.0',
     description:
       'Theo học chuyên ngành Khoa học Dữ liệu với thành tích học tập xuất sắc (GPA 3.741/4.0); đạt Chứng chỉ tiếng Anh VSTEP bậc 4/6 (Score 7.0 - B2); chủ động nghiên cứu và phát triển các hệ thống AI ứng dụng thực tế.',
   },

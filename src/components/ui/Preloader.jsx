@@ -7,10 +7,10 @@ const COUNT_DURATION = 950
 const CLIMAX_HOLD = 300
 
 const telemetrySteps = [
-  { min: 0, text: 'KHỞI TẠO HẠ TẦNG SUY LUẬN AI // INFERENCE ENGINE READY' },
-  { min: 25, text: 'NẠP MÔ HÌNH NGÔN NGỮ LỚN & ĐỒNG BỘ vLLM / H200 GPU...' },
-  { min: 55, text: 'KÍCH HOẠT HỆ THỐNG AGENT LAI // Z3 PROVER & LANGGRAPH...' },
-  { min: 82, text: 'KẾT NỐI VECTOR DATABASE QDRANT & PIPELINE SPEECH AI...' },
+  { min: 0, text: 'KHỞI TẠO MÔ HÌNH NGÔN NGỮ LỚN & AGENT // AI SYSTEMS READY' },
+  { min: 25, text: 'NẠP KIẾN TRÚC TRUY XUẤT TĂNG CƯỜNG RAG & VECTOR EMBEDDINGS...' },
+  { min: 55, text: 'KÍCH HOẠT HỆ THỐNG AGENT THÔNG MINH // MULTI-AGENT & LANGGRAPH...' },
+  { min: 82, text: 'KẾT NỐI PIPELINE SPEECH AI & NEUROSYMBOLIC REASONING...' },
   { min: 100, text: 'HỆ THỐNG HOÀN TẤT 100% // CHÀO MỪNG ĐẾN VỚI YAHI PORTFOLIO' },
 ]
 

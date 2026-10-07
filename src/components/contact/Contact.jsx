@@ -31,7 +31,7 @@ export function Contact() {
 
         <Reveal delay={0.2}>
           <p className="mx-auto mb-12 max-w-xl text-base text-zinc-400 leading-relaxed sm:text-lg">
-            Dù bạn muốn trao đổi về tối ưu hóa LLM serving, kiến trúc AI Agent lai (Neurosymbolic), giải pháp xử lý giọng nói Speech-to-Speech hay cơ hội hợp tác dự án, hãy kết nối ngay với tôi.
+            Dù bạn muốn trao đổi về giải pháp LLM &amp; RAG, kiến trúc AI Agent thông minh, công nghệ xử lý giọng nói Speech-to-Speech hay cơ hội hợp tác dự án, hãy kết nối ngay với tôi.
           </p>
         </Reveal>
 

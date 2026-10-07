@@ -52,7 +52,7 @@ export const skillCategories = [
     ],
   },
   {
-    category: 'Hạ tầng, MLOps & Frontend',
+    category: 'MLOps, Deployment & Frontend',
     skills: [
       'vLLM',
       'FastAPI',

@@ -28,10 +28,10 @@ export const projects = [
   },
   {
     id: 3,
-    title: 'Viettel AI Race: LLM Serving',
-    subtitle: 'Tối ưu hóa vLLM phục vụ mô hình LiquidAI trên GPU NVIDIA H200',
+    title: 'Viettel AI Race: LLM Optimization',
+    subtitle: 'Tối ưu hóa suy luận mô hình LiquidAI trên GPU NVIDIA H200',
     description:
-      'Tối ưu hóa hạ tầng vLLM serving hiệu năng cao cho mô hình LiquidAI/LFM2.5-1.2B-Instruct trên phân vùng NVIDIA H200 MiG instance; tập trung tối ưu cực thấp TTFT, TPOT, quản trị bộ đệm KV-cache, continuous batching và quantization cho giải đấu Viettel AI Race 2026.',
+      'Nghiên cứu tối ưu hóa suy luận và hiệu năng cho mô hình LiquidAI/LFM2.5-1.2B-Instruct trên phân vùng NVIDIA H200 MiG instance; tập trung giảm thiểu TTFT, TPOT, quản trị bộ đệm KV-cache, continuous batching và quantization cho giải đấu Viettel AI Race 2026.',
     image: null,
     tags: ['vLLM', 'NVIDIA H200', 'KV-Cache', 'Quantization', 'Inference Optimization'],
     github: 'https://github.com/Platypus27-coder/viettel-ai-race-llm-serving',

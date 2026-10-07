@@ -12,8 +12,8 @@ const HeroCanvas = lazy(() => import('./HeroCanvas'))
 // Giữ nguyên các thuật ngữ định danh chuyên ngành
 const roles = [
   'Data Science Student @ HCMUS',
-  'High-Performance LLM Serving',
-  'Neurosymbolic Agent Builder',
+  'LLM, RAG & AI Agent Builder',
+  'Neurosymbolic Systems Engineer',
   'Speech AI & Offline NMT',
 ]
 const ease = [0.16, 1, 0.3, 1]
@@ -107,7 +107,7 @@ export function Hero({ ready = true }) {
               <div className="mt-1.5 flex flex-wrap items-center gap-2">
                 <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-0.5 font-mono text-[11px] text-emerald-400">
                   <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                  HCMUS 24KDL1
+                  HCMUS 24KDL
                 </span>
                 <span className="inline-flex items-center gap-1 rounded-full border border-accent-blue/30 bg-accent-blue/10 px-2.5 py-0.5 font-mono text-[11px] text-accent-blue">
                   GPA 3.74/4.0
@@ -162,7 +162,7 @@ export function Hero({ ready = true }) {
             animate={show}
             className="mb-9 max-w-xl text-base leading-relaxed text-zinc-400 sm:text-lg"
           >
-            Sinh viên Khoa học Dữ liệu tại <strong className="text-white font-medium">HCMUS (ĐHQG TP.HCM)</strong>. Tôi nghiên cứu và xây dựng hệ thống High-Performance LLM Serving, Neurosymbolic AI Agent và các giải pháp Speech Processing ngoại tuyến.
+            Sinh viên Khoa học Dữ liệu tại <strong className="text-white font-medium">HCMUS (ĐHQG TP.HCM)</strong>. Tôi chuyên sâu phát triển các hệ thống LLM, RAG, AI Agent thông minh và các giải pháp Speech Processing ứng dụng thực tế.
           </motion.p>
 
           {/* Nút hành động */}

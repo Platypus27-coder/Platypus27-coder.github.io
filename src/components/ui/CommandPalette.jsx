@@ -153,7 +153,7 @@ export function CommandPalette() {
         print(...HELP)
         break
       case 'whoami':
-        print(`${site.name} (${site.shortName}) — Data Science @ HCMUS · High-Performance LLM Serving · Neurosymbolic Agents · Speech AI`)
+        print(`${site.name} (${site.shortName}) — Data Science @ HCMUS · LLM, RAG & AI Agents · Speech AI`)
         break
       case 'ls':
         if (arg === 'projects') print(...projects.map((p, i) => `${String(i + 1).padStart(2, '0')}  ${p.title}`))

@@ -48,7 +48,7 @@ export function Skills() {
               </span>
             </h2>
             <p className="max-w-sm text-sm text-zinc-400 leading-relaxed">
-              Công cụ, framework và hạ tầng được phân nhóm logic theo mục đích sử dụng thực tế — không dùng % ảo.
+              Công cụ, thư viện và framework được phân nhóm logic theo mục đích ứng dụng thực tế — không dùng % ảo.
             </p>
           </div>
         </Reveal>

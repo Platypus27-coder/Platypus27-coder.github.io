@@ -6,8 +6,8 @@ import { site } from '../../data/site'
 import { researchData } from '../../data/research'
 
 const focusAreas = [
-  'LLM Serving & Systems',
-  'Neurosymbolic Agents',
+  'LLM & RAG Systems',
+  'Autonomous AI Agents',
   'Speech Processing & NMT',
   'Data Science & MLOps',
 ]
@@ -16,7 +16,7 @@ const focusAreas = [
 const proof = [
   'Đạt 98.28% pass rate cho pipeline dịch giọng nói OneVoice (WER 0.55% EN).',
   'Xây dựng Neurosymbolic STEM Agent kết hợp Z3 Theorem Prover & SymPy (EXACT 2026).',
-  'Tối ưu vLLM serving trên GPU NVIDIA H200 MiG cho Viettel AI Race 2026.',
+  'Tối ưu hóa mô hình ngôn ngữ LiquidAI trên GPU NVIDIA H200 cho Viettel AI Race 2026.',
 ]
 
 function LocalTime() {
@@ -53,13 +53,13 @@ export function About() {
             <BentoCard className="p-8 sm:p-10">
               <div className="flex h-full flex-col justify-between gap-10">
                 <h2 className="font-display text-3xl font-extrabold uppercase leading-[1.12] tracking-tight text-white sm:text-5xl">
-                  Tôi là một AI &amp; Data Science builder đam mê xây dựng{' '}
+                  Tôi là một AI &amp; Data Science builder đam mê phát triển{' '}
                   <span className="bg-gradient-to-r from-accent-blue via-accent-purple to-accent-cyan bg-clip-text text-transparent">
-                    các hệ thống AI tốc độ cao &amp; suy luận chuẩn xác.
+                    LLM, RAG và các hệ thống AI Agent thông minh.
                   </span>
                 </h2>
                 <p className="max-w-xl text-base leading-relaxed text-zinc-400">
-                  Theo học chuyên ngành Khoa học Dữ liệu tại <span className="text-white font-medium">HCMUS (ĐHQG TP.HCM)</span> với GPA <span className="text-accent-cyan font-semibold">3.741/4.0</span> và chứng chỉ tiếng Anh <span className="text-accent-purple font-semibold">VSTEP 7.0 (B2)</span>. Tôi tập trung vào hạ tầng suy luận LLM (vLLM, H200 GPU), hệ thống Agent lai biểu tượng (Neurosymbolic AI) và công nghệ giọng nói song ngữ ngoại tuyến.
+                  Theo học chuyên ngành Khoa học Dữ liệu tại <span className="text-white font-medium">HCMUS (ĐHQG TP.HCM)</span> với GPA <span className="text-accent-cyan font-semibold">3.741/4.0</span> và chứng chỉ tiếng Anh <span className="text-accent-purple font-semibold">VSTEP 7.0 (B2)</span>. Tôi tập trung nghiên cứu và xây dựng các giải pháp mô hình ngôn ngữ lớn (LLM), kiến trúc RAG bảo mật, hệ thống Agent lai biểu tượng (Neurosymbolic AI) và công nghệ giọng nói song ngữ ngoại tuyến.
                 </p>
               </div>
             </BentoCard>
@@ -243,7 +243,7 @@ export function About() {
                   <div className="flex items-start gap-3 rounded-xl border border-white/[0.07] bg-black/40 p-3.5">
                     <span className="font-mono text-lg text-accent-cyan leading-none">“</span>
                     <p className="text-xs italic leading-relaxed text-zinc-300 sm:text-sm">
-                      Tối ưu từng mili-giây suy luận, chính xác trong từng bước logic biểu tượng.
+                      Kiến tạo giải pháp AI thực chiến: từ mô hình ngôn ngữ lớn, hệ thống RAG chuẩn xác đến AI Agent tự hành.
                     </p>
                   </div>
                 </div>
