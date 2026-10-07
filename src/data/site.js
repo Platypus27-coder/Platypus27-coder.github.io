@@ -1,0 +1,20 @@
+// Thông tin cá nhân toàn trang — Ngô Gia Huy (YaHi / Platypus27-coder)
+export const site = {
+  name: 'Ngô Gia Huy',
+  shortName: 'Gia Huy (YaHi)',
+  handle: 'Platypus27-coder',
+  role: 'Data Science & AI Engineer',
+  institution: 'Trường Đại học Khoa học Tự nhiên - ĐHQG TP.HCM (HCMUS)',
+  classCohort: 'Khóa 2024 - 24KDL1 (Khoa học Dữ liệu)',
+  gpa: '3.741 / 4.0',
+  englishCert: 'VSTEP 7.0 (B2)',
+  location: 'TP. Hồ Chí Minh, Việt Nam',
+  timezone: 'Asia/Ho_Chi_Minh',
+  github: 'https://github.com/Platypus27-coder',
+  linkedin: 'https://www.linkedin.com/in/ng%C3%B4-gia-huy-a92336368/',
+  facebook: 'https://www.facebook.com/gia.huy.614431',
+  kaggle: 'https://www.kaggle.com/kaisercoding',
+  email: 'ngohuy270306@gmail.com',
+  phone: '0777499241',
+  cv: 'cv/NgoGiaHuy_CurriculumVitae.pdf',
+}

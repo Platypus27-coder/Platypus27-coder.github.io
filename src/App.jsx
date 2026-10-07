@@ -1,0 +1,79 @@
+import React, { useCallback, useEffect, useState } from 'react'
+import { AnimatePresence } from 'framer-motion'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { SmoothScroll } from './components/layout/SmoothScroll'
+import { CosmicBackground } from './components/background/CosmicBackground'
+import { Cursor } from './components/ui/Cursor'
+import { Preloader } from './components/ui/Preloader'
+import { CommandPalette } from './components/ui/CommandPalette'
+import { Navbar } from './components/layout/Navbar'
+import { Hero } from './components/hero/Hero'
+import { About } from './components/about/About'
+import { Projects } from './components/projects/Projects'
+import { Research } from './components/research/Research'
+import { Skills } from './components/skills/Skills'
+import { Experience } from './components/experience/Experience'
+import { Contact } from './components/contact/Contact'
+import { Footer } from './components/layout/Footer'
+
+const prefersReducedMotion =
+  typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+export default function App() {
+  const [loading, setLoading] = useState(!prefersReducedMotion)
+  const finishLoading = useCallback(() => setLoading(false), [])
+
+  // Always start at the top when the intro plays.
+  useEffect(() => {
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual'
+    window.scrollTo(0, 0)
+
+    // Safety fallback: Tự động mở toàn bộ trang web sau tối đa 1.8s, tuyệt đối không bị treo
+    const fallback = setTimeout(() => {
+      setLoading(false)
+    }, 1800)
+    return () => clearTimeout(fallback)
+  }, [])
+
+  // Layout can shift once fonts are in and the preloader is gone — recalc pinned sections.
+  useEffect(() => {
+    if (loading) return
+    const id = requestAnimationFrame(() => ScrollTrigger.refresh())
+    document.fonts?.ready.then(() => ScrollTrigger.refresh())
+    return () => cancelAnimationFrame(id)
+  }, [loading])
+
+  return (
+    <SmoothScroll paused={loading}>
+      <AnimatePresence>{loading && <Preloader key="preloader" onComplete={finishLoading} />}</AnimatePresence>
+
+      <div className="relative min-h-screen bg-[#050505] text-[#F5F5F5]">
+        {/* Background Động Siêu Cấp Thẩm Mỹ (Luxury Artwork + 3D Warp Stars + Aurora Fluid Smoke) */}
+        <CosmicBackground />
+
+        {/* Con trỏ thông minh desktop */}
+        <Cursor />
+
+        {/* Bảng lệnh nhanh Ctrl+K / Terminal */}
+        <CommandPalette />
+
+        {/* Thanh điều hướng */}
+        <Navbar />
+
+        {/* Các phân mục chính */}
+        <main className="relative z-10 flex flex-col">
+          <Hero ready={!loading} />
+          <About />
+          <Projects />
+          <Research />
+          <Skills />
+          <Experience />
+          <Contact />
+        </main>
+
+        {/* Chân trang */}
+        <Footer />
+      </div>
+    </SmoothScroll>
+  )
+}
