@@ -28,10 +28,10 @@ export default function App() {
     if ('scrollRestoration' in history) history.scrollRestoration = 'manual'
     window.scrollTo(0, 0)
 
-    // Safety fallback: Tự động mở toàn bộ trang web sau tối đa 1.8s, tuyệt đối không bị treo
+    // Safety fallback: Tự động mở toàn bộ trang web sau tối đa 6.5s để bảo đảm không bao giờ bị kẹt
     const fallback = setTimeout(() => {
       setLoading(false)
-    }, 1800)
+    }, 6500)
     return () => clearTimeout(fallback)
   }, [])
 

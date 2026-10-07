@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ScrambleText } from './ScrambleText'
 import { site } from '../../data/site'
 
-const COUNT_DURATION = 950
-const CLIMAX_HOLD = 300
+const COUNT_DURATION = 2600
+const CLIMAX_HOLD = 1500
 
 const telemetrySteps = [
   { min: 0, text: 'KHỞI TẠO MÔ HÌNH NGÔN NGỮ LỚN & AGENT // AI SYSTEMS READY' },
@@ -19,7 +19,7 @@ export function Preloader({ onComplete }) {
   const [isClimax, setIsClimax] = useState(false)
   const [isWarping, setIsWarping] = useState(false)
 
-  // Đếm từ 0 -> 100% với tốc độ dứt khoát
+  // Đếm từ 0 -> 100% nhịp nhàng, êm ái để người xem đọc rõ từng dòng giới thiệu
   useEffect(() => {
     // Tải trước bundle 3D HeroCanvas
     import('../hero/HeroCanvas')
@@ -28,7 +28,7 @@ export function Preloader({ onComplete }) {
     const start = performance.now()
     const step = (now) => {
       const p = Math.min(1, (now - start) / COUNT_DURATION)
-      const eased = 1 - Math.pow(1 - p, 2.8)
+      const eased = 1 - Math.pow(1 - p, 2.4)
       const current = Math.round(eased * 100)
       setCount(current)
 
@@ -43,17 +43,17 @@ export function Preloader({ onComplete }) {
     return () => cancelAnimationFrame(raf)
   }, [])
 
-  // Khi chạm mốc 100%, tự động mở cửa nhanh chóng và kết thúc ngay
+  // Khi chạm mốc 100%, giữ lại 1.5s để người xem ngắm trọn vẹn màn chào mừng trước khi mở cửa không gian
   useEffect(() => {
     if (!isClimax) return
 
     const warpTimer = setTimeout(() => {
       setIsWarping(true)
-    }, 200)
+    }, 1500)
 
     const endTimer = setTimeout(() => {
       onComplete()
-    }, 550)
+    }, 2300)
 
     return () => {
       clearTimeout(warpTimer)
@@ -200,14 +200,14 @@ export function Preloader({ onComplete }) {
               <div className="overflow-visible py-2">
                 <ScrambleText
                   text="NGÔ GIA HUY"
-                  duration={500}
+                  duration={750}
                   className="block font-display text-4xl sm:text-7xl lg:text-8xl font-extrabold uppercase tracking-tight text-white drop-shadow-[0_0_40px_rgba(79,124,255,0.7)]"
                 />
               </div>
 
               {/* Lĩnh vực chuyên môn phát sáng */}
               <p className="mt-2 font-mono text-xs sm:text-sm uppercase tracking-[0.35em] text-accent-cyan drop-shadow-[0_0_15px_#22D3EE]">
-                DATA SCIENCE · HIGH-PERFORMANCE LLM · AGENTS · SPEECH AI
+                DATA SCIENCE · LLM &amp; RAG · AI AGENTS · SPEECH AI
               </p>
             </motion.div>
           )}

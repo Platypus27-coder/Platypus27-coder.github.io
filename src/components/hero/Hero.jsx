@@ -32,14 +32,14 @@ export function Hero({ ready = true }) {
 
   useEffect(() => {
     if (!ready) return
-    const id = setInterval(() => setRoleIndex((i) => (i + 1) % roles.length), 3000)
+    const id = setInterval(() => setRoleIndex((i) => (i + 1) % roles.length), 4200)
     return () => clearInterval(id)
   }, [ready])
 
   const show = ready ? 'show' : 'hidden'
   const fadeUp = (delay) => ({
     hidden: { opacity: 0, y: 24 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8, delay, ease } },
+    show: { opacity: 1, y: 0, transition: { duration: 1.0, delay, ease } },
   })
 
   return (
@@ -151,7 +151,7 @@ export function Hero({ ready = true }) {
             className="mb-6 flex h-9 items-center font-mono text-lg font-semibold text-zinc-300 sm:text-2xl"
           >
             <span className="mr-2 text-accent-blue">&gt;</span>
-            <ScrambleText text={roles[roleIndex]} play={ready} duration={650} />
+            <ScrambleText text={roles[roleIndex]} play={ready} duration={750} />
             <span className="ml-1 inline-block h-6 w-[2px] animate-pulse bg-accent-cyan" />
           </motion.div>
 
